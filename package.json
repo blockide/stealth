@@ -1,0 +1,40 @@
+{
+  "name": "stealth",
+  "version": "0.4.0",
+  "description": "Stealth addresses for Bitcoin and other crypto currencies.",
+  "main": "lib/stealth.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- --reporter list test/*.js",
+    "coveralls": "npm run coverage && coveralls < coverage/lcov.info",
+    "test": "standard && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cryptocoinjs/stealth"
+  },
+  "keywords": [
+    "bitcoin",
+    "steatlth",
+    "addresses",
+    "privacy"
+  ],
+  "author": "JP Richardson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cryptocoinjs/stealth/issues"
+  },
+  "homepage": "https://github.com/cryptocoinjs/stealth",
+  "dependencies": {
+    "bs58": "^2.0.1",
+    "ecurve": "^1.0.1"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.1.0",
+    "standard": "^2.10.0"
+  }
+}
